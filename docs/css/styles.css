@@ -6,6 +6,17 @@ body {
 h1 {
     color: #66bfbf; 
 }
+
+.splash {
+  font-family: "Playwrite CA", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 40px;
+  animation: fadeIn 4s;
+}
+
 h3 {
     color: #66bfbf;
 }
@@ -51,4 +62,85 @@ hr {
   .profile-image {
     height: 25vh;
     width: 25vh;
+  }
+
+  /*Header Bar Styling*/
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* header {
+    background: 
+  } */
+
+  header::after { 
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+
+  .logo {
+    float: left;
+    height: 25vh;
+    width: 25vh;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 50px;
+
+  }
+
+  nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 350;
+  }
+
+  nav a:hover {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  /* Fade In Text */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+/* Photo Styling */
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+  .photo-container img {
+    width: 300px;
+    height:auto;
+  }
+
+  .photo-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .photo-container li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 50px;
   }
